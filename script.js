@@ -13,7 +13,7 @@ let selected = [];
 
 function renderTable() {
   const sections = {
-    ringan: document.getElementById("tableLantas"),
+    lantas: document.getElementById("tableLantas"),
     ringan: document.getElementById("tableRingan"),
     sedang: document.getElementById("tableSedang"),
     berat: document.getElementById("tableBerat"),
@@ -130,17 +130,17 @@ function loadCSV() {
             let kategori = (row["KATEGORI"] || "").trim().toLowerCase();
 
              if (pasal.startsWith("A")) {
-              kategori = "Lantas";
+              kategori = "lantas";
             }
             if (pasal.startsWith("B")) {
               kategori = "ringan";
             }
 
             if (pasal.startsWith("C")) {
-              kategori = "Sedang";
+              kategori = "sedang";
             }
             if (pasal.startsWith("D")) {
-              kategori = "Berat";
+              kategori = "berat";
             }
 
             return {
