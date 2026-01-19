@@ -13,6 +13,7 @@ let selected = [];
 
 function renderTable() {
   const sections = {
+    ringan: document.getElementById("tableLantas"),
     ringan: document.getElementById("tableRingan"),
     sedang: document.getElementById("tableSedang"),
     berat: document.getElementById("tableBerat"),
