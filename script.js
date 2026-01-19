@@ -128,6 +128,9 @@ function loadCSV() {
             const pasal = row["PASAL"];
             let kategori = (row["KATEGORI"] || "").trim().toLowerCase();
 
+             if (pasal.startsWith("A")) {
+              kategori = "Lantas";
+            }
             if (pasal.startsWith("B")) {
               kategori = "ringan";
             }
